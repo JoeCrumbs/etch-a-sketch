@@ -1,0 +1,49 @@
+html {
+    width: 100%;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > h1 {
+    margin-left: 20px;
+}
+
+header > button {
+    margin-right: 20px;
+    height: 25px;
+}
+
+#sketch-container {
+    margin: auto;
+    border: 1px solid black;
+    box-sizing:content-box;
+    width: 80vw;
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.sketch-container__div {
+    float: left;
+    border: none;
+    margin: none;
+}
+
+.sketch-container__div--hovered {
+    background-color: black;
+}
