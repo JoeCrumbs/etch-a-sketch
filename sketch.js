@@ -4,14 +4,14 @@ const CONTAINER = document.querySelector('#sketch-container');
 function createSketchGrid(columnNumber) {
     let gridNode;
     // To Do: get grdelements to resize responsively
-    let gridElementSize = (CONTAINER.clientWidth / columnNumber).toString() + 'px';
+    let gridElementSize = (100 / columnNumber).toString() + '%';
     //let mousePressed = false; // use for mousedown solution
     for (i = 1; i <= columnNumber * columnNumber; i++) {
         gridNode = document.createElement('div');
         gridNode.classList.add('sketch-container__div');
         gridNode.style.width = gridElementSize;
         gridNode.style.height = gridElementSize;
-        if (i % columnNumber === 1) gridNode.style.clear = 'left';
+        //if (i % columnNumber === 1) gridNode.style.clear = 'left';
         /* use for mousedown solution
         gridNode.addEventListener('mousedown', function() {
             mousePressed = true;
