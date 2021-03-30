@@ -20,29 +20,33 @@
         <div class ="flex-container flex-container--column container-width--500">
             <div class="toggle-container flex-container">
                 <div class="toggle-container__element">
-                    <input type="color" id="colorpicker" value="#2F4F4F">
-                    <label for="colorpicker">Default color</label>
+                    <label class="toggle" for="color">
+                        <input id="color" type="radio" name="draw-setting" checked></input>
+                        <span class="toggle-switch"></span>
+                    </label>
+                    <label for="colorpicker">Color:</label>
+                    <input type="color" id="colorpicker" value="rgb(0,0,0)">
                 </div>
                 <div class="toggle-container__element">
                     <label class="toggle" for="eraser">
-                        <input id="eraser" type="checkbox" name="eraser"></input>
+                        <input id="eraser" type="radio" name="draw-setting"></input>
                         <span class="toggle-switch"></span>
                     </label>
                     <p>Eraser</p>
                 </div>
                 <div class="toggle-container__element">
                     <label class="toggle" for="rgb">
-                        <input id="rgb" type="checkbox" name="rgb"></input>
+                        <input id="rgb" type="radio" name="draw-setting"></input>
                         <span class="toggle-switch"></span>
                     </label>
                     <p>Random RGB colors</p>
                 </div>
                 <div class="toggle-container__element">
                     <label class="toggle" for="shade">
-                        <input id="shade" type="checkbox" name="shade"></input>
+                        <input id="shade" type="radio" name="draw-setting"></input>
                         <span class="toggle-switch"></span>
                     </label>
-                    <p>Shade colors</p>
+                    <p>Darken 10%</p>
                 </div>
             </div>
             
